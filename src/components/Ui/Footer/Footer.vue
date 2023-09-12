@@ -1,10 +1,16 @@
+<script>
+    import { RouterLink, RouterView } from "vue-router";
+</script>
+
 <template>
-    <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-0 mx-auto">
+    <footer class="w-full global-container py-10 px-4 sm:px-6 lg:px-0 mx-auto">
         <!-- Grid -->
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
             <div class="col-span-full hidden lg:col-span-1 lg:block">
-            <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Brand</a>
-            <p class="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Preline.</p>
+            <RouterLink to="/">
+                <img class="h-10" src="/src/assets/logo/archstone-small.svg" alt="Logo">
+            </RouterLink>
+            <p class="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2023 Archstone.</p>
             </div>
             <!-- End Col -->
 
@@ -156,7 +162,9 @@
 
             <div class="flex justify-between items-center">
                 <div class="mt-3 sm:hidden">
-                <a class="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Brand</a>
+                <RouterLink to="/">
+                    <img class="h-10" src="/src/assets/logo/archstone-small.svg" alt="Logo">
+                </RouterLink>
                 <p class="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">© 2022 Preline.</p>
                 </div>
 
@@ -185,12 +193,6 @@
         </div>
     </footer>
 </template>
-
-<script>
-export default {
-    name: "Footer",
-};
-</script>
 
 <style>
 

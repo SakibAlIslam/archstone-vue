@@ -28,7 +28,7 @@ export default {
 
 <template>
 <!-- Hero -->
-    <div class="min-h-[93vh] mx-auto px-4 sm:px-6 lg:px-0 relative flex items-center justify-center">
+    <div class="min-h-max lg:min-h-[90vh] mx-auto px-4 sm:px-6 lg:px-0 relative flex items-center justify-center">
         <div class="global-container mt-2 lg:-mt-20">
             <div class="flex flex-col lg:flex-row gap-4 md:gap-8 xl:gap-10 items-center justify-between">
                 <div class="hero-left flex-1">
@@ -137,7 +137,7 @@ export default {
             </div>
         </div>
         <div class="absolute left-0 bottom-0 w-full -z-10">
-            <img class="blur-[2px]" src="/src/assets/svg/hero-bg.svg" alt="">
+            <img src="/src/assets/svg/hero-bg.svg" alt="">
         </div>
 
     </div>
